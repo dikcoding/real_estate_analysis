@@ -46,16 +46,28 @@ In this project, we process a large volume of property sales records stored in a
    ```
 
 2. Run preprocessing to clean the data:
+
+   ```bash
    python preprocess.py
+   ```
 
 3. Train the model using the cleaned dataset:
+
+   ```bash
    python train.py
+   ```
 
 4. Use the trained model to predict house prices:
    python predict.py --input data/input.json
 
+   ```bash
+   python predict.py
+   ```
+
 5. Run the main program:
+   ```bash
    python main.py
+   ```
 
 ## Contribution
 
