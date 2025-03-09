@@ -76,3 +76,5 @@ If you would like to contribute to this project, please fork this repository and
 ## License
 
 This project is released under the MIT License. Please refer to the LICENSE file for more details.
+
+## Project Directory Structure
