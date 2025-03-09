@@ -1,80 +1,69 @@
-# Real Estate Price Prediction
+# 🏡 Real Estate Analysis
 
-## About the Project
+## 📌 About the Project
 
-The real estate market, such as in Sydney and Melbourne, presents exciting opportunities for data analysts to analyze and predict property price trends. Property price prediction is becoming increasingly important and beneficial, as property prices serve as a key indicator of the overall market condition and a country's economic health.
+Real estate market analysis provides valuable insights into property trends, pricing, and key influencing factors. This project leverages NumPy, Pandas, and Matplotlib to process and analyze property data, enabling users to explore pricing trends based on land area, number of rooms, and location.
 
-In this project, we process a large volume of property sales records stored in an unknown format with potential data quality issues. The main objective of this project is to clean the data, train a prediction model, and generate accurate property price forecasts.
+The goal of this project is to clean, analyze, and visualize real estate data to identify key market patterns and trends.
 
-## Stages of House Price Prediction
+## 🔍 Project Workflow
 
-1. **Data Preprocessing** (`preprocess.py`)
+1. **Data Loading & Cleaning** (`data_loader.py`)
 
-   - Cleans and formats the data for analysis.
-   - Handles missing values or anomalies in the dataset.
-   - Converts unknown data formats into usable structures.
+   - Reads property data from CSV format.
+   - Cleans missing or inconsistent values.
+   - Converts data into structured formats for analysis.
 
-2. **Model Training** (`train.py`)
+2. **Data Analysis** (`analysis.py`)
 
-   - Trains a machine learning model to predict property prices based on the cleaned dataset.
-   - Uses regression algorithms or other suitable techniques for real estate data analysis.
+   - Performs statistical analysis on property pricing.
+   - Identifies key trends and correlations between features.
 
-3. **Price Prediction** (`predict.py`)
+3. **Data Visualization** (`visualization.py`)
 
-   - Uses the trained model to predict house prices based on specific inputs.
-   - Validates prediction results with actual data to measure model accuracy.
+   - Generates graphs to visualize property price trends.
+   - Uses Matplotlib for trend analysis and insights.
 
-4. **Running the Program** (`main.py`)
-   - Provides the main interface for executing the prediction process.
-   - Integrates all stages for a complete end-to-end solution.
+4. **Main Execution** (`main.py`)
+   - Orchestrates the entire process, integrating data loading, analysis, and visualization.
 
-## Requirements
+## 🛠 Requirements
 
 - Python 3.x
 - Pandas
-- Scikit-learn
 - NumPy
 - Matplotlib (optional, for data visualization)
 
 ## How to Use
 
-1. Ensure all dependencies are installed:
+1. Load and Clean Data:
 
    ```bash
-   pip install -r requirements.txt
-
+   python app/data_loader.py
    ```
 
-2. Run preprocessing to clean the data:
+2. Analyze Property Trends:
 
    ```bash
-   python preprocess.py
+   python app/analysis.py
    ```
 
-3. Train the model using the cleaned dataset:
+3. Generate Visualizations:
 
    ```bash
-   python train.py
+   python app/visualization.py
    ```
 
-4. Use the trained model to predict house prices:
-   python predict.py --input data/input.json
+4. Run the Full Pipeline:
 
    ```bash
-   python predict.py
+   python app/main.py
    ```
 
-5. Run the main program:
-   ```bash
-   python main.py
-   ```
+## 🤝 Contribution
 
-## Contribution
+Want to contribute? Feel free to fork this repository and submit a pull request with improvements!
 
-If you would like to contribute to this project, please fork this repository and submit a pull request with any changes or improvements.
+## 📜 License
 
-## License
-
-This project is released under the MIT License. Please refer to the LICENSE file for more details.
-
-## Project Directory Structure
+This project is licensed under the MIT License. See the LICENSE file for details.
