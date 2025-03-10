@@ -4,7 +4,9 @@ def load_data(file_path):
     """
     Memuat data properti dari file CSV dan membersihkan kolom yang tidak relevan
     """
-    try:
+
+    try:python -m pip install --upgrade pip
+
         df = pd.read_csv(file_path)
 
         # Memilih kolom yang relevan
